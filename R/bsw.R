@@ -119,7 +119,7 @@ bsw_get <- function(year, month, day, uv_stress, resolution,
 
   # create key (aka: url)
   if (resolution == "clm") {
-    key <- "ftp://eclipse.ncdc.noaa.gov/pub/seawinds/SI/uv/clm/uvclm95to05.nc"
+    key <- "ftp://ncdc.noaa.gov/pub/seawinds/SI/uv/clm/uvclm95to05.nc"
   } else {
     key <- bsw_key(year, month, day, uv_stress, resolution)  
   }
@@ -154,7 +154,7 @@ bsw_GET_write <- function(url, path, overwrite = TRUE, ...) {
 }
 
 bsw_base_ftp <- function(x) {
-  base <- "ftp://eclipse.ncdc.noaa.gov/pub/seawinds/SI"
+  base <- "ftp://ncdc.noaa.gov/pub/seawinds/SI"
   if (x == "uv") file.path(base, "uv") else file.path(base, "stress")
 }
 
