@@ -188,6 +188,5 @@ bsw_key <- function(year, month, day, uv_stress, resolution) {
 
 bsw_read <- function(x) {
   check4pkg("tidync")
-  filename <- system.file(x, package = "tidync")
-  tidync(filename)
+  y <- tidync::tidync(x) 
 }
