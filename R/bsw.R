@@ -187,7 +187,7 @@ bsw_key <- function(year, month, day, uv_stress, resolution) {
 }
 
 bsw_read <- function(x) {
-  check4pkg("tidync")
+  check4pkg("raster")
   print(x)
-  y <- tidync::tidync(x) 
+  y = raster(x)
 }
