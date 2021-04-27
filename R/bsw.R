@@ -119,7 +119,7 @@ bsw_get <- function(year, month, day, uv_stress, resolution,
 
   # create key (aka: url)
   if (resolution == "clm") {
-    key <- "ftp://ncdc.noaa.gov/pub/seawinds/SI/uv/clm/uvclm95to05.nc"
+    key <- "https://www.ncei.noaa.gov/data/blended-global-sea-surface-wind-products/access/winds/climatology/uvclm95to05.nc"
   } else {
     key <- bsw_key(year, month, day, uv_stress, resolution)  
   }
