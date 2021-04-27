@@ -187,6 +187,7 @@ bsw_key <- function(year, month, day, uv_stress, resolution) {
 }
 
 bsw_read <- function(x) {
-  check4pkg("ncdf4")
-  ncdf4::nc_open(x)
+  check4pkg("tidync")
+  filename <- system.file(x, package = "tidync")
+  tidync(filename)
 }
